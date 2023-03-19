@@ -13,7 +13,8 @@ const INITAL_VALUES = {
     first_brewed: '',
     brewers_tips: '',
     attenuation_level: 0,
-    contributed_by: ''
+    contributed_by: '',
+    _id: ''
 }
 
 const NewBeer = () => {
@@ -26,7 +27,7 @@ const NewBeer = () => {
         
         createBeer(values)
             .then((createdBeer)=>{
-                navigate(`/beers/${createdBeer.id}`)
+                navigate(`/beers/${createdBeer._id}`)
             })
             .catch()
     }
@@ -73,7 +74,7 @@ const NewBeer = () => {
                 <Input id="contributed_by" name="contributed_by" 
                     value={values.contributed_by} onChange={onChange} type="text"/>
 
-                <button>Create</button>
+                <button type='submit'>ADD NEW</button>
             </form>
         </div>
     );

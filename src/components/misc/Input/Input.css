@@ -3,4 +3,8 @@
     text-align: left;
     width: 100%;
     box-sizing: border-box;
+    height: 30px;
+    border-radius:20px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
 }

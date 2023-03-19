@@ -1,4 +1,6 @@
 .FormControl {
     text-align: left;
-   
+   font-size: 12px;
+   font-weight: bold;
+   margin-left: 20px;
 }
