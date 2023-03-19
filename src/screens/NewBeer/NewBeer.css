@@ -1,0 +1,10 @@
+.NewBeer {
+    max-width:1000px;
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+}
+
+.NewBeer form {
+    padding: 20px 30px;
+}
