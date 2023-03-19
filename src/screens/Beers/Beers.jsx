@@ -12,8 +12,8 @@ const Beers = () => {
     useEffect(() => {
         listBeers()
             .then((beers) => {
-                setBeers(beers);
-                setLoading(false)
+                setLoading(false);
+                setBeers(beers)
             })
             .catch((err) => console.error(err))
     }, [])
