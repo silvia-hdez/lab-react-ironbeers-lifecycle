@@ -2,6 +2,7 @@ import React from "react";
 import {list} from '../../services/BeerService'
 import BeerBox from "../BeerBox/BeerBox";
 import './BeerList.css'
+import homeIcon from '../../assets/home.png'
 
 class BeerList extends React.Component {
     state = {
@@ -32,7 +33,9 @@ class BeerList extends React.Component {
     render() {
         return(
             <div className="BeerList">
-               <h1>Beer List</h1> 
+               <div className="HomeIcon">
+                <img src={homeIcon} />
+               </div>
                <div className="RenderBeer">
                 {this.state.loading ? (<div>Loading</div>) : (
                     <div>
@@ -40,7 +43,6 @@ class BeerList extends React.Component {
                             return <BeerBox key={beer.id} name={beer.name} 
                                 tagline={beer.tagline} image={beer.image_url} contributedBy={beer.contributed_by}
                             />
-                            {/* <div key={beer.id}> {beer.name} </div> */}
                         })}
                     </div>
                 )}

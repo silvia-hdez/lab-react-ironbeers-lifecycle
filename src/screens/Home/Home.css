@@ -1,0 +1,35 @@
+.Home {
+    
+    max-width:1000px;
+    width: 50%;
+    margin: 20px auto
+}
+
+.HomeBox {
+    width: 100%;
+    border: 1px solid lightgray;
+    
+   
+}
+
+.HomeBox img {
+    width: 100%;
+}
+
+.HomeBox h2 {
+    text-align: left;
+    padding: 0px 20px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    color: black;
+    font-weight:400;
+}
+
+
+.HomeBox p {
+    padding:  0px 20px;
+    text-align: justify;
+    margin: 5px 0px 20px 0px;
+    box-sizing: border-box;
+    color: grey;
+}
