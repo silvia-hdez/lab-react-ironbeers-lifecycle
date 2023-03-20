@@ -14,7 +14,7 @@ const INITAL_VALUES = {
     brewers_tips: '',
     attenuation_level: 0,
     contributed_by: '',
-    _id: ''
+    id: ''
 }
 
 const NewBeer = () => {
@@ -27,7 +27,9 @@ const NewBeer = () => {
         
         createBeer(values)
             .then((createdBeer)=>{
-                navigate(`/beers/${createdBeer._id}`)
+                console.log(createdBeer)
+                console.log(values)
+                navigate(`/beers/${createdBeer.id}`)
             })
             .catch()
     }
