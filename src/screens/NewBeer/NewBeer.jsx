@@ -28,8 +28,7 @@ const NewBeer = () => {
         createBeer(values)
             .then((createdBeer)=>{
                 console.log(createdBeer)
-                console.log(values)
-                navigate(`/beers/${createdBeer.id}`)
+                navigate(`/beers/${createdBeer._id}`)
             })
             .catch()
     }
